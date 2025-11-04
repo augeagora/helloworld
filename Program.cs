@@ -58,9 +58,22 @@ foreach (var name in names)
 
 var numbers = new List<int> { 0, 14, 144 };
 numbers.Add(21);
-foreach (var number in numbers)
+foreach (var number in numbers[0..4])
 {
   Console.WriteLine($"One of my favorite numbers is {number}.");
 }
 
-// Testing pushing to main
+Console.WriteLine(names[0]);
+Console.WriteLine(names[1]);
+Console.WriteLine(names[2]);
+Console.WriteLine(names[^1]);
+
+var cats = new String[] { "Chiqui", "Sultana", "Minino"};
+cats = [..cats,"Lily"];
+
+int catNumber = 1;
+foreach (var cat in cats)
+{
+  Console.WriteLine($"Cat #{catNumber} is called {cat}.");
+  catNumber++;
+}
