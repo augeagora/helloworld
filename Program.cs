@@ -1,23 +1,39 @@
-﻿using System.Data;
-using System.Security.Cryptography;
-
+﻿// Hello World
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[Simple Hello World]");
+Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine("Hello, World!");
+Console.WriteLine();
 
+
+// Strings
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[Working With Strings]");
+Console.ForegroundColor = ConsoleColor.White;
 string firstFriend = "Erick";
 string secondFriend = "Antoine";
 string friends = $"My friends are {firstFriend} and {secondFriend}.";
-
 Console.WriteLine(friends);
+Console.WriteLine();
 
+
+// Numbers
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[Working With Numbers]");
+Console.ForegroundColor = ConsoleColor.White;
 decimal a = 14.44M;
 decimal b = 15.55M;
 decimal c = a + b;
-
 Console.WriteLine($"The answer is {c}!");
+Console.WriteLine();
 
+
+// If Statements
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[If Statements]");
+Console.ForegroundColor = ConsoleColor.White;
 int firstNumber = 5;
 int secondNumber = 5;
-
 if ((firstNumber + secondNumber) > 10)
 {
   Console.WriteLine("The answer is greater than 10.");
@@ -30,7 +46,13 @@ else
 {
   Console.WriteLine("The answer is 10.");
 }
+Console.WriteLine();
 
+
+// Do While Loop
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[Do While Loop]");
+Console.ForegroundColor = ConsoleColor.White;
 int counter = 0;
 
 do
@@ -39,7 +61,13 @@ do
   counter++;
 }
 while (counter < 5);
+Console.WriteLine();
 
+
+// For Loop
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[For Loop]");
+Console.ForegroundColor = ConsoleColor.White;
 for (int i = 0; i < 5; i++)
 {
   if (i == 3)
@@ -48,7 +76,13 @@ for (int i = 0; i < 5; i++)
   }
   Console.WriteLine("Not three...");
 }
+Console.WriteLine();
 
+
+// Lists
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[Lists]");
+Console.ForegroundColor = ConsoleColor.White;
 var names = new List<string> { "Douglas", "Erick", "Antoine" };
 names.Add("Kcits");
 foreach (var name in names)
@@ -62,14 +96,20 @@ foreach (var number in numbers[0..4])
 {
   Console.WriteLine($"One of my favorite numbers is {number}.");
 }
+Console.WriteLine();
 
+
+// Arrays
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[Arrays]");
+Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine(names[0]);
 Console.WriteLine(names[1]);
 Console.WriteLine(names[2]);
 Console.WriteLine(names[^1]);
 
-var cats = new String[] { "Chiqui", "Sultana", "Minino"};
-cats = [..cats,"Lily"];
+var cats = new String[] { "Chiqui", "Sultana", "Minino" };
+cats = [.. cats, "Lily"];
 
 int catNumber = 1;
 foreach (var cat in cats)
@@ -77,3 +117,18 @@ foreach (var cat in cats)
   Console.WriteLine($"Cat #{catNumber} is called {cat}.");
   catNumber++;
 }
+Console.WriteLine();
+
+
+// Sorting & Searching Lists
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[Sorting & Searching Lists]");
+Console.ForegroundColor = ConsoleColor.White;
+names.Sort();
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Console.WriteLine($"The name \"Antoine\" is now located at index {names.IndexOf("Antoine")} inside the \"names\" list.");
+
+Console.WriteLine();
