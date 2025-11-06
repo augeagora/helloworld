@@ -1,4 +1,6 @@
 ﻿// Hello World
+using System.Text;
+
 Console.ForegroundColor = ConsoleColor.DarkBlue;
 Console.WriteLine("[Simple Hello World]");
 Console.ForegroundColor = ConsoleColor.White;
@@ -177,3 +179,26 @@ foreach (string s in scoreQuery)
   Console.WriteLine(s);
 }
 Console.WriteLine("");
+
+
+// Brain Mush #1
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[Brain Mush #1]");
+Console.ForegroundColor = ConsoleColor.White;
+List<string> animals = ["dog", "cat", "sheep"];
+IEnumerable<string> animalQuery =
+  from animal in animals
+  orderby animal ascending
+  select $"We love {animal}'s...";
+
+foreach (string s in animalQuery)
+{
+  if (s == "We love sheep's...")
+  {
+    Console.WriteLine("We love sheep..."); // Correct pluralisation of sheep
+  }
+  else
+  {
+    Console.WriteLine(s);
+  }
+}
