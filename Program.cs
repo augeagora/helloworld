@@ -202,3 +202,44 @@ foreach (string s in animalQuery)
     Console.WriteLine(s);
   }
 }
+Console.WriteLine();
+
+
+// Brain Mush #2
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("[Brain Mush #2]");
+Console.ForegroundColor = ConsoleColor.White;
+
+int milliseconds = 200;
+Console.WriteLine("Messing around with Thread.Sleep...\n");
+Thread.Sleep(milliseconds);
+Console.WriteLine("o o o o o o o o o o o o o o o o o o");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("O                                 O");
+Thread.Sleep(milliseconds);
+Console.WriteLine("o o o o o o o o o o o o o o o o o o\n");
+Thread.Sleep(milliseconds);
+Console.WriteLine("A square made up of o's sort of...");
+Console.WriteLine();
