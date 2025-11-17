@@ -8,10 +8,16 @@ namespace helloworld
     {
       // Hello World
       HighlightedTitle("Hello World");
-      Console.WriteLine("Hello, World!");
-      Console.WriteLine();
+      HelloWorld();
       Next();
-      Console.WriteLine("Okay, this works. Sick.");
+
+      // Strings
+      HighlightedTitle("Strings");
+      Strings();
+      Next();
+
+      // This is just for testing
+      Console.WriteLine("Reached the end for now...");
     }
 
     static void HighlightedTitle(string x)
@@ -28,6 +34,21 @@ namespace helloworld
       Console.ForegroundColor = ConsoleColor.White;
       Console.ReadLine();
       Console.Clear();
+    }
+
+    static void HelloWorld()
+    {
+      Console.WriteLine("Hello, World!");
+      Console.WriteLine();
+    }
+
+    static void Strings()
+    {
+      string firstFriend = "Erick";
+      string secondFriend = "Antoine";
+      string friends = $"My friends are {firstFriend} and {secondFriend}.";
+      Console.WriteLine(friends);
+      Console.WriteLine();
     }
   }
 }
